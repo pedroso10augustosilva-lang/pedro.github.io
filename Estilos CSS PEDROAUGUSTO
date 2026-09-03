@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu primeiro CSS</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Bem-vindo ao CSS</h1>
+  </header>
+
+  <main class="conteudo">
+    <p class="destaque">Este parágrafo usa uma classe.</p>
+    <p>Este é um parágrafo comum.</p>
+
+    <div class="cartoes">
+      <div class="cartao">Cartão 1</div>
+      <div class="cartao">Cartão 2</div>
+      <div class="cartao">Cartão 3</div>
+    </div>
+  </main>
+</body>
+</html>
+
+
+Arquivo estilos.css
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.cabecalho {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.conteudo {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.destaque {
+  background-color: #ffeaa7;
+  padding: 10px;
+  border-left: 4px solid #f39c12;
+}
+
+.cartoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cartao {
+  flex: 1;
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
